@@ -1,0 +1,6 @@
+section {
+  min-height: 420px;
+}
+.jumbotron .container img {
+  width: 25%;
+}
