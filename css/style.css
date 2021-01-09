@@ -1,3 +1,9 @@
+.card-columns {
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+
 .navbar button {
   margin: auto;
 }
@@ -22,16 +28,17 @@
 .jumbotron img {
   border: 5px solid #28b7bb;
 }
+.jumbotron .contact a {
+  text-decoration: none;
+}
 
 .portfolio {
   background-color: #e9ecef;
 }
 .portfolio .card {
-  height: 412px;
+  border-radius: 5px;
 }
-.portfolio .card img {
-  height: 250px;
-}
+
 section {
   min-height: 500px;
 }
@@ -48,4 +55,12 @@ section {
 }
 footer {
   background-color: #28b7bb;
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+    -webkit-column-count: 2 !important;
+    -moz-column-count: 2 !important;
+    column-count: 2 !important;
+  }
 }
